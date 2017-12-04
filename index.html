@@ -3,10 +3,14 @@
         <title>Amanov</title>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>
-            $('#cor').on('click', function(e){
-                e.preventDefault();
-                alert('Teste');
+            
+            $(function(){
+                $('#cor').click(function(e){
+                    e.preventDefault();
+                    alert('Teste');
+                });
             });
+            
         </script>
     </head>
     <body>
