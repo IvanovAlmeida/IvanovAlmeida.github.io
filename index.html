@@ -1,6 +1,7 @@
 <html>
     <head>
         <title>Amanov</title>
+        <meta charset="utf-8">
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>
             
@@ -9,9 +10,23 @@
                     e.preventDefault();
                     alert('Teste');
                 });
+
+
+                $('body').mousemove(function(event){
+                    event.preventDefault();
+                    console.log('move');
+                });
+
             });
             
         </script>
+
+        <style type="text/css">
+            body {
+                width: 100%;
+                height: 100%;
+            }
+        </style>
     </head>
     <body>
         <center><h3 id='cor'> <3 </h3></center>
