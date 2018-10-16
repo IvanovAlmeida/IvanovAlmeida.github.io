@@ -1,35 +1,67 @@
 html, body, .container {
-    height: 100%;
-    background-color: #87CEEB;
-    margin: 10px;
-    padding: 0;
-    overflow: hidden;
+	height: 100%;
+	background-color: #87CEEB;
+	margin: 10px;
+	padding: 0;
+	overflow: hidden;
+}
+.container {
+	margin: 0 auto;
+	position: relative;
+	width: 50%;
+	max-width: 365px;
+  	min-width: 200px;
 }
 .heart {
-    margin: 0 auto;
-    margin-top: 15%;
-    background-color: red;
-    transform: rotate(-45deg);
-    position: relative;
-    max-height: 200px;
-    max-width: 200px;
-    height: 35%;
-    width: 35%;
+	position: relative;
+	width: 35%;
+	padding-bottom: 35%;
+	top: 45%;
+	left: 50%;
+	-moz-transform: translate(-50%, -50%) rotate(-135deg);
+	-webkit-transform: translate(-50%, -50%) rotate(-135deg);
+	-o-transform: translate(-50%, -50%) rotate(-135deg);
+	-ms-transform: translate(-50%, -50%) rotate(-135deg);
+	transform: translate(-50%, -50%) rotate(-135deg);
+	background-color: red;
 }
 .heart:before,
 .heart:after {
-    content: "";
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    max-height: 200px;
-    max-width: 200px;
-    height: 100%;
-    width: 100%;
+	content: "";
+	display: block;
+	position: absolute;
+	width: 100%;
+	padding-bottom: 100%;
+	border-radius: 50%;
+	background-color: inherit;
+  	z-index: 1;
 }
 .heart:before {
-    top: -100px;
+    top: 50%;
 }
 .heart:after {
-    left: 100px;
+    left: 50%;
+}
+.message {
+	position: relative;
+	top: 15%;
+	text-align: center;
+	font-family: "Kaushan Script";
+  	font-size: 2.5em;
+  	z-index: 100;
+}
+.message::after {
+	content: '|';
+	margin-left: 5px;
+	opacity: 1;
+	animation: pisca .7s infinite;
+}
+
+@keyframes pisca {
+	0%, 100% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
 }
