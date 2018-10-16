@@ -1,0 +1,35 @@
+html, body, .container {
+    height: 100%;
+    background-color: #87CEEB;
+    margin: 10px;
+    padding: 0;
+    overflow: hidden;
+}
+.heart {
+    margin: 0 auto;
+    margin-top: 15%;
+    background-color: red;
+    transform: rotate(-45deg);
+    position: relative;
+    max-height: 200px;
+    max-width: 200px;
+    height: 35%;
+    width: 35%;
+}
+.heart:before,
+.heart:after {
+    content: "";
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    max-height: 200px;
+    max-width: 200px;
+    height: 100%;
+    width: 100%;
+}
+.heart:before {
+    top: -100px;
+}
+.heart:after {
+    left: 100px;
+}
