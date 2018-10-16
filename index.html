@@ -2,35 +2,39 @@
 <html>
 	<head>
 
-		<title>I love you <3</title>
+		<title> I love you <3 </title>
 
 		<style type="text/css">
-			body {
+			html, body, .container {
+				height: 100%;
 				background-color: #87CEEB;
+				margin: 10px;
+				padding: 0;
 				overflow: hidden;
 			}
 			.heart {
 				margin: 0 auto;
 				margin-top: 15%;
 				background-color: red;
-				height: 200px;
 				transform: rotate(-45deg);
-				width: 200px;
 				position: relative;
+				max-width: 200px;
+				width: 35%;
 			}
 			.heart:before,
 			.heart:after {
 				content: "";
 				background-color: red;
 				border-radius: 50%;
-				height: 200px;
 				position: absolute;
-				width: 200px;
+				max-height: 200px;
+				max-width: 200px;
+				height: 100%;
+				width: 100%;
 			}
 			.heart:before {
 			    top: -100px;
 			}
-
 			.heart:after {
 			    left: 100px;
 			}
@@ -41,7 +45,6 @@
 		<div class="heart">
 			
 		</div>
-
 
 		<script
 	  		src="https://code.jquery.com/jquery-3.3.1.min.js"
