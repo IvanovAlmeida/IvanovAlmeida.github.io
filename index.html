@@ -1,34 +1,52 @@
+<!DOCTYPE html>
 <html>
-    <head>
-        <title>Amanov</title>
-        <meta charset="utf-8">
-        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-        <script>
-            
-            $(function(){
-                $('#cor').click(function(e){
-                    e.preventDefault();
-                    alert('Teste');
-                });
+	<head>
+
+		<title>Maoe</title>
+
+		<style type="text/css">
+			body {
+				background-color: #87CEEB;
+				overflow: hidden;
+			}
+			.heart {
+				margin: 0 auto;
+				margin-top: 15%;
+				background-color: red;
+				height: 200px;
+				transform: rotate(-45deg);
+				width: 200px;
+				position: relative;
+			}
+			.heart:before,
+			.heart:after {
+				content: "";
+				background-color: red;
+				border-radius: 50%;
+				height: 200px;
+				position: absolute;
+				width: 200px;
+			}
+			.heart:before {
+			    top: -100px;
+			}
+
+			.heart:after {
+			    left: 100px;
+			}
+		</style>
+	</head>
+	<body>
+
+		<div class="heart">
+			
+		</div>
 
 
-                $('body').mousemove(function(event){
-                    event.preventDefault();
-                    console.log('move');
-                });
-
-            });
-            
-        </script>
-
-        <style type="text/css">
-            body {
-                width: 100%;
-                height: 100%;
-            }
-        </style>
-    </head>
-    <body>
-        <center><h3 id='cor'> <3 </h3></center>
-    </body>
+		<script
+	  		src="https://code.jquery.com/jquery-3.3.1.min.js"
+  			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  			crossorigin="anonymous">	
+		</script>
+	</body>
 </html>
